@@ -7,134 +7,25 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header card-header-primary">
-                        <button type="button" class="btn btn-success float-right">Tambah</button>
-                        <h4 class="card-title ">Simple Table</h4>
-                        <p class="card-category"> Here is a subtitle for this table</p>
+                        <button type="button" class="btn btn-success float-right" data-toggle="modal" data-target="#modal_tambah">Tambah</button>
+                        <h4 class="card-title ">Tabel Soal</h4>
                     </div>
                     <div class="card-body">
 
                         <div class="table-responsive">
                             <table class="table table-hover">
                                 <thead class=" text-primary">
-                                    <th>
-                                        ID
-                                    </th>
-                                    <th>
-                                        Name
-                                    </th>
-                                    <th>
-                                        Country
-                                    </th>
-                                    <th>
-                                        City
-                                    </th>
-                                    <th>
-                                        Salary
-                                    </th>
+                                    <th>No</th>
+                                    <th>Soal</th>
+                                    <th>Action</th>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>
-                                            1
-                                        </td>
-                                        <td>
-                                            Dakota Rice
-                                        </td>
-                                        <td>
-                                            Niger
-                                        </td>
-                                        <td>
-                                            Oud-Turnhout
-                                        </td>
-                                        <td class="text-primary">
-                                            $36,738
-                                        </td>
+                                        <td>1</td>
+                                        <td>312</td>
+                                        <td>Niger</td>
                                     </tr>
-                                    <tr>
-                                        <td>
-                                            2
-                                        </td>
-                                        <td>
-                                            Minerva Hooper
-                                        </td>
-                                        <td>
-                                            Curaçao
-                                        </td>
-                                        <td>
-                                            Sinaai-Waas
-                                        </td>
-                                        <td class="text-primary">
-                                            $23,789
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            3
-                                        </td>
-                                        <td>
-                                            Sage Rodriguez
-                                        </td>
-                                        <td>
-                                            Netherlands
-                                        </td>
-                                        <td>
-                                            Baileux
-                                        </td>
-                                        <td class="text-primary">
-                                            $56,142
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            4
-                                        </td>
-                                        <td>
-                                            Philip Chaney
-                                        </td>
-                                        <td>
-                                            Korea, South
-                                        </td>
-                                        <td>
-                                            Overland Park
-                                        </td>
-                                        <td class="text-primary">
-                                            $38,735
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            5
-                                        </td>
-                                        <td>
-                                            Doris Greene
-                                        </td>
-                                        <td>
-                                            Malawi
-                                        </td>
-                                        <td>
-                                            Feldkirchen in Kärnten
-                                        </td>
-                                        <td class="text-primary">
-                                            $63,542
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            6
-                                        </td>
-                                        <td>
-                                            Mason Porter
-                                        </td>
-                                        <td>
-                                            Chile
-                                        </td>
-                                        <td>
-                                            Gloucester
-                                        </td>
-                                        <td class="text-primary">
-                                            $78,615
-                                        </td>
-                                    </tr>
+
                                 </tbody>
                             </table>
                         </div>
@@ -145,5 +36,31 @@
     </div>
 </div>
 </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modal_tambah" tabindex="-1" aria-labelledby="ModalTambah" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ModalTambah"><b>Tambah Data</b></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="soal_nlp">Soal NLP</label>
+                        <textarea class="form-control" id="soal_nlp" aria-describedby="soal_nlp" rows="4"></textarea>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                <button type="submit" class="btn btn-primary">Simpan</button>
+            </div>
+            </form>
+        </div>
+    </div>
 </div>
 @endsection
